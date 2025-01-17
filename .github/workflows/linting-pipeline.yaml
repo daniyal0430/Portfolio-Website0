@@ -19,8 +19,8 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '18'
-    - name: Install dependencies
-      run: npm install -y
+    - name: Initialize Node.js
+      run: npm init -y
     - name: Install HTMLHint and Stylelint
       run: npm install --save-dev htmlhint stylelint
     - name: Lint HTML files
